@@ -57,7 +57,7 @@ class GeminiService:
         # New google-genai SDK: client-based API
         self.client = genai.Client(api_key=api_key)
         # gemini-2.0-flash-lite: higher free-tier quota than gemini-2.5-flash
-        self.model_name = "gemini-2.5-flash"
+        self.model_name = "gemini-3.1-flash-lite"
 
     @staticmethod
     def _system_prompt() -> str:
